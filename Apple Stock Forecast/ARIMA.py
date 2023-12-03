@@ -42,7 +42,7 @@ plt.show()
 train_data, test_data = train_test_split(stock_data['Adj Close'], train_ratio=0.9)
 
 # Fit ARIMA model
-order = (2, 1, 2)  # Example order (p, d, q)
+order = (2, 1, 2)  
 predictions = fit_arima(train_data, test_data,order)
 
 # Plot actual vs. predicted prices
