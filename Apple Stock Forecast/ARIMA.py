@@ -28,7 +28,6 @@ def calculate_rmse(actual, predicted):
 
 # Read data from CSV file
 file_path = 'AAPL.csv'
-# Assuming your CSV file has a column named 'Date' as the index and 'Adj Close' as the stock prices
 stock_data = pd.read_csv(file_path, index_col='Date', parse_dates=True)
 
 # Convert the index to datetime format
