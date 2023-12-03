@@ -42,7 +42,7 @@ plt.show()
 train_data, test_data = train_test_split(stock_data['Adj Close'], train_ratio=0.9)
 
 # Fit SARIMA model
-order = (2, 1, 2)  # Example order (p, d, q)
+order = (2, 1, 2)  
 seasonal_order = (1,1,0,30)
 predictions = fit_arima(train_data, test_data,order,seasonal_order)
 
